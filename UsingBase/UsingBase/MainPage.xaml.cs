@@ -32,6 +32,8 @@ namespace UsingBase
         {
             InitializeComponent();
            _connection =  DependencyService.Get<ISQLiteDb>().GetConnection();
+            
+
            
 
         }
@@ -79,5 +81,7 @@ namespace UsingBase
             //_recipes.Remove(recipe);
             recipesListView.ItemsSource = _recipes;
         }
+
+       
     }
 }
